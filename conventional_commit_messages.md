@@ -29,7 +29,7 @@ The `scope` provides additional contextual information.
 
 ### Subject
 The `subject` contains a succinct description of the change.
-* Is an **mandatory** part of the format
+* Is a **mandatory** part of the format
 * Use the imperative, present tense: "change" not "changed" nor "changes"
 * Don't capitalize the first letter
 * No dot (.) at the end
