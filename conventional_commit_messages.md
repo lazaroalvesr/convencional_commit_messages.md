@@ -4,9 +4,9 @@ See how a minor change to your commit message style can make you a better progra
 ## Format
 
 **<[type](#types)>(<[scope](#scopes)>): <[subject](#subject)>**<br>
-`empty line`<br>
+`empty seperator line`<br>
 **<[body](#body)>**<br>
-`empty line`<br>
+`empty seperator line`<br>
 **<[footer](#footer)>**
 
 **[Commit Message Examples](#examples)**
