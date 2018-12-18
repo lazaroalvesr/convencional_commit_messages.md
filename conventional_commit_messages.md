@@ -48,7 +48,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
 ### Examples
 * ```
-  feat(shopingcard): add the amazing button
+  feat(shopingcart): add the amazing button
   ```
 * ```
   feat: remove ticket list endpoint
