@@ -93,17 +93,15 @@ The `footer` should contain any information about **Breaking Changes** and is al
 commit_msg_type_regex='(feat|fix|refactor|style|test|docs|build)'
 commit_msg_scope_regex='.{1,20}'
 commit_msg_subject_regex='.{1,100}'
-commit_msg_header_regex="^(revert: )?${commit_msg_type_regex}(\(${commit_msg_scope_regex}\))?: ${commit_msg_subject_regex}$"
+commit_msg_header_regex="^Merge .+$|^(revert: )?${commit_msg_type_regex}(\(${commit_msg_scope_regex}\))?: ${commit_msg_subject_regex}$"
 
 zero_commit="0000000000000000000000000000000000000000"
 
 # Do not traverse over commits that are already in the repository
 excludeExisting="--not --all"
 
+error=""
 while read oldrev newrev refname; do
-  # echo "payload"
-  echo $refname $oldrev $newrev
-
   # branch or tag get deleted
   if [ "$newrev" = "$zero_commit" ]; then
     continue
@@ -120,13 +118,16 @@ while read oldrev newrev refname; do
     commit_msg_header=$(git show -s --format=%s $commit)
     if ! [[ "$commit_msg_header" =~ ${commit_msg_header_regex} ]]; then
       echo "$commit" >&2
-      echo "Invalid commit msg header" >&2
+      echo "ERROR: Invalid commit message format" >&2
       echo "$commit_msg_header" >&2
-      exit 1
+      error="true"
     fi
   done
 done
-exit 0
+
+if [ -n "$error" ]; then
+  exit 1
+fi
 ```
 
 -----
