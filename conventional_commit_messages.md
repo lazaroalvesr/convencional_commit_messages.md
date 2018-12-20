@@ -82,36 +82,53 @@ The `footer` should contain any information about **Breaking Changes** and is al
   
 ## Git Prereceive Hook Script
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 
-set -eo pipefail
+#
+# Pre-receive hook that will block commits with messges that do not follow regex rule
+#
 
-rev_old="$1"
-rev_new="$2"
-ref_name="$3" 
+commit_msg_type_regex='(feat|fix|refactor|style|test|docs|build)'
+commit_msg_scope_regex='.{1,20}'
+commit_msg_subject_regex='.{1,100}'
+commit_msg_header_regex="^(revert: )?${commit_msg_type_regex}(\(${commit_msg_scope_regex}\))?: ${commit_msg_subject_regex}$"
 
-commit_message_type_regex='(feat|fix|refactor|style|test|docs|build)'
-commit_message_scope_regex='.{1,20}'
-commit_message_subject_regex='.{1,100}'
-commit_message_header_regex="^(revert: )?${commit_message_type_regex}(\(${commit_message_scope_regex}\))?: ${commit_message_subject_regex}$"
+zero_commit="0000000000000000000000000000000000000000"
 
-reject='false'
+# Do not traverse over commits that are already in the repository
+# (e.g. in a different branch)
+# This prevents funny errors if pre-receive hooks got enabled after some
+# commits got already in and then somebody tries to create a new branch
+# If this is unwanted behavior, just set the variable to empty
+excludeExisting="--not --all"
 
-# Iterate over all the commits
-for commit in $(git rev-list $rev_old..$rev_new); do
-  commit_message_header=$(git show -s --format=%s $commit)
-  if ! [[ "$commit_message_header" =~ ${commit_message_header_regex} ]]; then
-    echo "$commit"
-    echo ">> Invalid commit message header"
-    echo "$commit_message_header"
-    echo ""
-    reject='true'
+while read oldrev newrev refname; do
+  # echo "payload"
+  echo $refname $oldrev $newrev
+
+  # branch or tag get deleted
+  if [ "$newrev" = "$zero_commit" ]; then
+    continue
   fi
-done
 
-if [ "$reject" = 'true' ]; then
-  exit 1
-fi
+  # Check for new branch or tag
+  if [ "$oldrev" = "$zero_commit" ]; then
+    rev_span=`git rev-list $newrev $excludeExisting`
+  else
+    rev_span=`git rev-list $oldrev..$newrev $excludeExisting`
+  fi
+
+  for commit in $rev_span; do
+    commit_msg_header=$(git show -s --format=%s $commit)
+    if ! [[ "$commit_msg_header" =~ ${commit_msg_header_regex} ]]; then
+      echo "$commit"
+      echo ">> Invalid commit msg header"
+      echo "$commit_msg_header"
+      exit 1
+    fi
+  done
+done
+exit 0
 ```
 
 -----
