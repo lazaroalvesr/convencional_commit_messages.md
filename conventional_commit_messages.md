@@ -19,6 +19,7 @@ See how a minor change to your commit message style can make you a better progra
 * `test` Changes that add missing tests or correcting existing tests
 * `docs` Changes that affect documentation only
 * `build` Changes that affect the build system or external dependencies
+---
 * `revert` A revert commit
   * In this case subject should be the header of the reverted commit. The Body should say: This reverts commit <commitHash>.
 
@@ -136,4 +137,7 @@ exit 0
 * https://www.conventionalcommits.org/
 * https://github.com/angular/angular/blob/master/CONTRIBUTING.md
 * http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+---
+* https://github.com/github/platform-samples/tree/master/pre-receive-hooks  
+* https://github.community/t5/GitHub-Enterprise-Best-Practices/Using-pre-receive-hooks-in-GitHub-Enterprise/ba-p/13863
 
