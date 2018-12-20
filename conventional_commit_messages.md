@@ -1,5 +1,6 @@
-# Semantic Commit Messages
-See how a minor change to your commit message style can make you a better programmer.
+# Conventinal Commit Messages
+![icon](https://www.qoomon.me/data/icons/conventional-commit-messages.png)
+See how a minor change to your commit message style can make a difference.
 
 ## Format
 
