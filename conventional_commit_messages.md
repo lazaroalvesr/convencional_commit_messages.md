@@ -98,10 +98,6 @@ commit_msg_header_regex="^(revert: )?${commit_msg_type_regex}(\(${commit_msg_sco
 zero_commit="0000000000000000000000000000000000000000"
 
 # Do not traverse over commits that are already in the repository
-# (e.g. in a different branch)
-# This prevents funny errors if pre-receive hooks got enabled after some
-# commits got already in and then somebody tries to create a new branch
-# If this is unwanted behavior, just set the variable to empty
 excludeExisting="--not --all"
 
 while read oldrev newrev refname; do
