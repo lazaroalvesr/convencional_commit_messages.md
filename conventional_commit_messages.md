@@ -80,7 +80,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
   ```
   
   
-## Git Prereceive Hook Script
+## Git Prereceive Hook Script to ensure commit message header format
 ```bash
 #!/usr/bin/env bash
 
