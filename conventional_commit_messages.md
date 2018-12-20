@@ -121,9 +121,9 @@ while read oldrev newrev refname; do
   for commit in $rev_span; do
     commit_msg_header=$(git show -s --format=%s $commit)
     if ! [[ "$commit_msg_header" =~ ${commit_msg_header_regex} ]]; then
-      echo "$commit"
-      echo ">> Invalid commit msg header"
-      echo "$commit_msg_header"
+      echo "$commit" >&2
+      echo "Invalid commit msg header" >&2
+      echo "$commit_msg_header" >&2
       exit 1
     fi
   done
