@@ -18,8 +18,8 @@ See how a minor change to your commit message style can make you a better progra
 * `style` A code change that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 * `test` Changes that add missing tests or correcting existing tests
 * `docs` Changes that affect documentation only
-* `build` Changes that affect the build system or external dependencies
-&nbsp;
+* `build` Changes that affect the build system or external dependencies<br>
+
 * `revert` A revert commit
   * In this case subject should be the header of the reverted commit. The Body should say: This reverts commit <commitHash>.
 
