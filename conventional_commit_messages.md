@@ -133,7 +133,7 @@ exit 0
 ```
 
 -----
-*References*
+## References
 * https://www.conventionalcommits.org/
 * https://github.com/angular/angular/blob/master/CONTRIBUTING.md
 * http://karma-runner.github.io/1.0/dev/git-commit-msg.html
