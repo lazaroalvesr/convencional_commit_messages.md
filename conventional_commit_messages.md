@@ -78,6 +78,41 @@ The `footer` should contain any information about **Breaking Changes** and is al
   
   This reverts commit 221d3ec6ffeead67cee8c730c4a15cf8dc84897a.
   ```
+  
+  
+## Git Prereceive Hook Script
+```bash
+#!/bin/bash
+
+set -eo pipefail
+
+rev_old="$1"
+rev_new="$2"
+ref_name="$3" 
+
+commit_message_type_regex='(feat|fix|refactor|style|test|docs|build)'
+commit_message_scope_regex='.{1,20}'
+commit_message_subject_regex='.{1,100}'
+commit_message_header_regex="^(revert: )?${commit_message_type_regex}(\(${commit_message_scope_regex}\))?: ${commit_message_subject_regex}$"
+
+reject='false'
+
+# Iterate over all the commits
+for commit in $(git rev-list $rev_old..$rev_new); do
+  commit_message_header=$(git show -s --format=%s $commit)
+  if ! [[ "$commit_message_header" =~ ${commit_message_header_regex} ]]; then
+    echo "$commit"
+    echo ">> Invalid commit message header"
+    echo "$commit_message_header"
+    echo ""
+    reject='true'
+  fi
+done
+
+if [ "$reject" = 'true' ]; then
+  exit 1
+fi
+```
 
 -----
 *References*
