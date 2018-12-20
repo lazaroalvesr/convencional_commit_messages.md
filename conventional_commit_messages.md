@@ -1,5 +1,5 @@
 # Conventinal Commit Messages
-![](https://www.qoomon.me/data/icons/conventional-commit-messages.png =250x250)
+<img src="https://www.qoomon.me/data/icons/conventional-commit-messages.png" width="200" height="400" />
 
 See how a minor change to your commit message style can make a difference.
 
