@@ -6,17 +6,12 @@ See how a minor change to your commit message style can make a difference. [Exam
 ## Commit Formats
 
 ### Default
-<div style="padding-left:4rem;">
-  <p><strong>&lt;<a href="#types">type</a>>(&lt;<a href="#scopes">optional scope</a>>): &lt;<a href="#subject">subject</a>></strong></p>
-
-  <p><code>empty separator line</code></p>
-
-  <p><strong>&lt;<a href="#body">optional body</a>></strong></p>
-
-  <p><code>empty separator line</code></p>
-
-  <p><strong>&lt;<a href="#footer">optional footer</a>></strong></p>
-</div>
+<pre>
+<i><a href="http://manpages.ubuntu.com/manpages/dapper/man1/prename.1.html">rename</a></i> ’s/\.bak$//’ *.bak
+</pre>
+<pre>
+  <b>Merge branch '\<branch name>'</b>
+</pre>
 
 ### Merge
 Follows default git merge message
