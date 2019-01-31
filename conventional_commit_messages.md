@@ -22,10 +22,10 @@ Merge branch <b>'<a href="#merge">&lt;branch name&gt;</a>'</b>
 
 ### Revert
 <pre>
-Revert <b>"<a href="#revert">&lt;commit headline&gt;</a>"</b>
+Revert "<b>&lt;commit headline&gt;</b>"
 <sub>empty separator line</sub>
-This reverts commit <b><a href="#revert">&lt;commit hash&gt;</a>.</b>
-<b><a href="#revert">&lt;optinal reason&gt;</a></b>
+This reverts commit <b>&lt;commit hash&gt;</b>.
+<b>&lt;optinal reason&gt;</b>
 </pre>
 <sup>Follows default git revert message</sup>
 
