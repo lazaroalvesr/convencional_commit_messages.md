@@ -7,11 +7,11 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 ### Default
 <pre>
-<b><a href="#types">&lt;type&gt;</a></font>(<a href="#scopes">&lt;optional scope&gt;</a>): <a href="#subject">&lt;subject&gt;</a></b>
+<b><a href="#types">&lt;type&gt;</a></b></font>(<b><a href="#scopes">&lt;optional scope&gt;</a></b>): <b><a href="#subject">&lt;subject&gt;</a></b>
 <sub>empty separator line</sub>
-<b>&lt;<a href="#body">optional body</a>></b>
+<b><a href="#body">&lt;optional body&gt;</a></b>
 <sub>empty separator line</sub>
-<b>&lt;<a href="#footer">optional footer</a>></b>
+<b><a href="#footer">&lt;optional footer&gt;</a></b>
 </pre>
 
 ### Merge
