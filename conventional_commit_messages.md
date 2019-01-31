@@ -6,13 +6,17 @@ See how a minor change to your commit message style can make a difference. [Exam
 ## Commit Formats
 
 ### Default
-<pre>
-  **<[type](#types)>(<[optional scope](#scopes)>): <[subject](#subject)>**<br>
-  <sub>`empty separator line`</sub><br>
-  **<[optional body](#body)>**<br>
-  <sub>`empty separator line`</sub><br>
-  **<[optional footer](#footer)>**
-</pre>
+
+<p><strong>&lt;<a href="#types">type</a>>(&lt;<a href="#scopes">optional scope</a>>): &lt;<a href="#subject">subject</a>></strong></p>
+
+<p><code>empty separator line</code></p>
+
+<p><strong>&lt;<a href="#body">optional body</a>></strong></p>
+
+<p><code>empty separator line</code></p>
+
+<p><strong>&lt;<a href="#footer">optional footer</a>></strong></p>
+
 
 ### Merge
 Follows default git merge message
