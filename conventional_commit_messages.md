@@ -4,14 +4,26 @@ See how a minor change to your commit message style can make a difference.
 <img src="https://img.icons8.com/dusk/1600/commit-git.png" width="200" height="200" />
 
 ## Format
+[Commit Message Examples](#examples)
 
-**<[type](#types)>(<[scope](#scopes)>): <[subject](#subject)>**<br>
+**<[type](#types)>(<[optional scope](#scopes)>): <[subject](#subject)>**<br>
 <sub>`empty separator line`</sub><br>
-**<[body](#body)>**<br>
+**<[optional body](#body)>**<br>
 <sub>`empty separator line`</sub><br>
-**<[footer](#footer)>**
+**<[optional footer](#footer)>**
 
-**[Commit Message Examples](#examples)**
+### Special Commit Formats
+
+#### `Merge` Commits
+Follows default git merge message
+**Merge branch '\<branch name>'**
+ 
+#### `Revert` Commits
+Follows default git revert message
+**Revert "\<commit headline>"**
+<sub>`empty separator line`</sub><br>
+**This reverts commit \<commit hash>.**
+**\<optinal reason>**
 
 ### Types
 * `feat` A code change that adds a new feature
@@ -21,10 +33,7 @@ See how a minor change to your commit message style can make a difference.
 * `test` Changes that add missing tests or correcting existing tests
 * `docs` Changes that affect documentation only
 * `build` Changes that affect the build system or external dependencies
-<br>
 
-* `revert` A revert commit
-  * In this case subject should be the header of the reverted commit. The Body should say: This reverts commit <commitHash>.
 
 ### Scopes
 The `scope` provides additional contextual information.
