@@ -14,7 +14,6 @@ See how a minor change to your commit message style can make a difference. [Exam
     <b>&lt;<a href="#footer">optional footer</a>></b>
 </pre>
 
-
 ### Merge
 Follows default git merge message
 <pre>
@@ -24,10 +23,10 @@ Follows default git merge message
 ### Revert
 Follows default git revert message
 <pre>
-    <b>Revert '&lt;commit headline&gt;'</b>
+    <b>Revert "&lt;commit headline&gt;"</b>
     <sub>empty separator line</sub>
     <b>This reverts commit &lt;commit hash&gt;.</b>
-    </b>&lt;optinal reason&gt;</b>
+    <b>&lt;optinal reason&gt;</b>
 </pre>
 
 ### Types
