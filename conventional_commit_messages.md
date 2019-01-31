@@ -1,10 +1,9 @@
 # Conventinal Commit Messages 
-See how a minor change to your commit message style can make a difference.
+See how a minor change to your commit message style can make a difference. [Examples](#examples)
 
 <img src="https://img.icons8.com/dusk/1600/commit-git.png" width="200" height="200" />
 
 ## Format
-[Commit Message Examples](#examples)
 
 **<[type](#types)>(<[optional scope](#scopes)>): <[subject](#subject)>**<br>
 <sub>`empty separator line`</sub><br>
