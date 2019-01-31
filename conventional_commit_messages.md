@@ -7,7 +7,7 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 ### Default
 <pre>
-<b><a href="#types">&lt;type&gt;</a>(<a href="#scopes">&lt;optional scope&gt;</a>): <a href="#subject">&lt;subject&gt;</a></b>
+<b><font color="#76C8AE"><a href="#types">&lt;type&gt;</a></font>(font color="#76C8AE"><a href="#scopes">&lt;optional scope&gt;</a></font>): font color="#76C8AE"><a href="#subject">&lt;subject&gt;</a></font></b>
 <sub>empty separator line</sub>
 <b>&lt;<a href="#body">optional body</a>></b>
 <sub>empty separator line</sub>
