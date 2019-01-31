@@ -3,26 +3,29 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 <img src="https://img.icons8.com/dusk/1600/commit-git.png" width="200" height="200" />
 
-## Format
+## Commit Formats
 
-**<[type](#types)>(<[optional scope](#scopes)>): <[subject](#subject)>**<br>
-<sub>`empty separator line`</sub><br>
-**<[optional body](#body)>**<br>
-<sub>`empty separator line`</sub><br>
-**<[optional footer](#footer)>**
+### `Default`
+<pre>
+  **<[type](#types)>(<[optional scope](#scopes)>): <[subject](#subject)>**<br>
+  <sub>`empty separator line`</sub><br>
+  **<[optional body](#body)>**<br>
+  <sub>`empty separator line`</sub><br>
+  **<[optional footer](#footer)>**
+</pre>
 
-### Special Commit Formats
+### `Merge` - Follows default git merge message
+<pre>
+  **Merge branch '\<branch name>'**
+</pre>
 
-#### `Merge` - Follows default git merge message
-
-**Merge branch '\<branch name>'**
- 
-#### `Revert` - Follows default git revert message
-
-**Revert "\<commit headline>"**
-<sub>`empty separator line`</sub><br>
-**This reverts commit \<commit hash>.**
-**\<optinal reason>**
+### `Revert` - Follows default git revert message
+<pre>
+  **Revert "\<commit headline>"**
+  <sub>`empty separator line`</sub><br>
+  **This reverts commit \<commit hash>.**
+  **\<optinal reason>**
+</pre>
 
 ### Types
 * `feat` A code change that adds a new feature
