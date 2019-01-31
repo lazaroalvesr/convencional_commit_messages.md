@@ -7,7 +7,7 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 ### Default
 <pre>
-<b><font color="#76C8AE">&lt;<a href="#types">type</a>&gt;</font>(<font color="#76C8AE"><a href="#scopes">&lt;optional scope&gt;</a></font>): <font color="#76C8AE"><a href="#subject">&lt;subject&gt;</a></font></b>
+<b><a href="#types">&lt;type&gt;</a></font>(<a href="#scopes">&lt;optional scope&gt;</a>): <a href="#subject">&lt;subject&gt;</a></b>
 <sub>empty separator line</sub>
 <b>&lt;<a href="#body">optional body</a>></b>
 <sub>empty separator line</sub>
@@ -16,16 +16,16 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 ### Merge
 <pre>
-<b>Merge branch '&lt;branch name&gt;'</b>
+<b>Merge branch '<a href="#">&lt;branch name&gt;</a>'</b>
 </pre>
 <sup>Follows default git merge message</sup>
 
 ### Revert
 <pre>
-<b>Revert "&lt;commit headline&gt;"</b>
+<b>Revert "<a href="#">&lt;commit headline&gt;"</b>
 <sub>empty separator line</sub>
-<b>This reverts commit &lt;commit hash&gt;.</b>
-<b>&lt;optinal reason&gt;</b>
+<b>This reverts commit <a href="#">&lt;commit hash&gt;</a>.</b>
+<b><a href="#">&lt;optinal reason&gt;</a></b>
 </pre>
 <sup>Follows default git revert message</sup>
 
