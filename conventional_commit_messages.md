@@ -15,13 +15,13 @@ See how a minor change to your commit message style can make a difference. [Exam
 </pre>
 
 ### Merge
-Follows default git merge message
+<sub>Follows default git merge message</sub>
 <pre>
     <b>Merge branch '&lt;branch name&gt;'</b>
 </pre>
 
 ### Revert
-Follows default git revert message
+<sub>Follows default git revert message</sub>
 <pre>
     <b>Revert "&lt;commit headline&gt;"</b>
     <sub>empty separator line</sub>
