@@ -16,10 +16,12 @@ See how a minor change to your commit message style can make a difference.
 
 #### `Merge` Commits
 Follows default git merge message
+
 **Merge branch '\<branch name>'**
  
 #### `Revert` Commits
 Follows default git revert message
+
 **Revert "\<commit headline>"**
 <sub>`empty separator line`</sub><br>
 **This reverts commit \<commit hash>.**
