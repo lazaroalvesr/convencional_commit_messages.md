@@ -5,7 +5,7 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 ## Commit Formats
 
-### `Default`
+### Default
 <pre>
   **<[type](#types)>(<[optional scope](#scopes)>): <[subject](#subject)>**<br>
   <sub>`empty separator line`</sub><br>
@@ -14,12 +14,14 @@ See how a minor change to your commit message style can make a difference. [Exam
   **<[optional footer](#footer)>**
 </pre>
 
-### `Merge` - Follows default git merge message
+### Merge
+Follows default git merge message
 <pre>
   **Merge branch '\<branch name>'**
 </pre>
 
-### `Revert` - Follows default git revert message
+### Revert
+Follows default git revert message
 <pre>
   **Revert "\<commit headline>"**
   <sub>`empty separator line`</sub><br>
