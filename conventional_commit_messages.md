@@ -16,7 +16,7 @@ See how a minor change to your commit message style can make a difference. [Exam
   <p><code>empty separator line</code></p>
 
   <p><strong>&lt;<a href="#footer">optional footer</a>></strong></p>
-<div>
+</div>
 
 ### Merge
 Follows default git merge message
