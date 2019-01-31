@@ -15,19 +15,19 @@ See how a minor change to your commit message style can make a difference. [Exam
 </pre>
 
 ### Merge
-<sub>Follows default git merge message</sub>
 <pre>
     <b>Merge branch '&lt;branch name&gt;'</b>
 </pre>
+<sup>Follows default git merge message</sup>
 
 ### Revert
-<sub>Follows default git revert message</sub>
 <pre>
     <b>Revert "&lt;commit headline&gt;"</b>
     <sub>empty separator line</sub>
     <b>This reverts commit &lt;commit hash&gt;.</b>
     <b>&lt;optinal reason&gt;</b>
 </pre>
+<sup>Follows default git revert message</sup>
 
 ### Types
 * `feat` A code change that adds a new feature
