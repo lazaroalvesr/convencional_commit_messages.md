@@ -16,7 +16,7 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 ### Merge
 <pre>
-Merge branch '<b><a href="#merge">&lt;branch name&gt;</a></b>'
+Merge branch '<b>&lt;branch name&gt;</b>'
 </pre>
 <sup>Follows default git merge message</sup>
 
