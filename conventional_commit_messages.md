@@ -10,7 +10,7 @@ See how a minor change to your commit message style can make a difference. [Exam
 <i><a href="http://manpages.ubuntu.com/manpages/dapper/man1/prename.1.html">rename</a></i> ’s/\.bak$//’ *.bak
 </pre>
 <pre>
-  <b>Merge branch '\<branch name>'</b>
+  <b>Merge branch '&lt;branch name&gt;'</b>
 </pre>
 
 ### Merge
