@@ -6,6 +6,7 @@ See how a minor change to your commit message style can make a difference. [Exam
 ## Commit Formats
 
 ### Default
+<font color="red">This is some text!</font>
 <pre>
 <b><font color="#76C8AE">&lt;<a href="#types">type</a>&gt;</font>(<font color="#76C8AE"><a href="#scopes">&lt;optional scope&gt;</a></font>): <font color="#76C8AE"><a href="#subject">&lt;subject&gt;</a></font></b>
 <sub>empty separator line</sub>
