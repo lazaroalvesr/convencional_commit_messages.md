@@ -2,26 +2,32 @@
 See how a minor change to your commit message style can make a difference. [Examples](#examples)
 
 <img src="https://img.icons8.com/dusk/1600/commit-git.png" width="200" height="200" />
+
 ## Commit Formats
 
 ### Default
 <pre>
-  <a href="http://manpages.ubuntu.com/manpages/dapper/man1/prename.1.html">rename</a>
+    <b>&lt;<a href="#types">type</a>>(&lt;<a href="#scopes">optional scope</a>>): &lt;<a href="#subject">subject</a>></b>
+    <sub>empty separator line</sub>
+    <b>&lt;<a href="#body">optional body</a>></b>
+    <sub>empty separator line</sub><
+    <b>&lt;<a href="#footer">optional footer</a>></b>
 </pre>
+
 
 ### Merge
 Follows default git merge message
 <pre>
-  <b>Merge branch '&lt;branch name&gt;'</b>
+    <b>Merge branch '&lt;branch name&gt;'</b>
 </pre>
 
 ### Revert
 Follows default git revert message
 <pre>
-<b>Revert '&lt;commit headline&gt;'</b>
-<sub>`empty separator line`</sub>
-<b>This reverts commit &lt;commit hash&gt;.</b>
-</b>&lt;optinal reason&gt;</b>
+    <b>Revert '&lt;commit headline&gt;'</b>
+    <sub>empty separator line</sub>
+    <b>This reverts commit &lt;commit hash&gt;.</b>
+    </b>&lt;optinal reason&gt;</b>
 </pre>
 
 ### Types
