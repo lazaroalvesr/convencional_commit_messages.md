@@ -10,7 +10,7 @@ See how a minor change to your commit message style can make a difference. [Exam
     <b>&lt;<a href="#types">type</a>>(&lt;<a href="#scopes">optional scope</a>>): &lt;<a href="#subject">subject</a>></b>
     <sub>empty separator line</sub>
     <b>&lt;<a href="#body">optional body</a>></b>
-    <sub>empty separator line</sub><
+    <sub>empty separator line</sub>
     <b>&lt;<a href="#footer">optional footer</a>></b>
 </pre>
 
