@@ -108,7 +108,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 commit_msg_type_regex='(feat|fix|refactor|style|test|docs|build)'
 commit_msg_scope_regex='.{1,20}'
 commit_msg_subject_regex='.{1,100}'
-commit_msg_header_regex="^Merge branch '.+'$|^(^Revert ".+"$)?|${commit_msg_type_regex}(\(${commit_msg_scope_regex}\))?: ${commit_msg_subject_regex}$"
+commit_msg_header_regex="^${commit_msg_type_regex}(\(${commit_msg_scope_regex}\))?: ${commit_msg_subject_regex}$|^Merge branch '.+'$|^(^Revert ".+"$)?|"
 
 zero_commit="0000000000000000000000000000000000000000"
 
