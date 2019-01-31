@@ -16,16 +16,16 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 ### Merge
 <pre>
-<b>Merge branch '<a href="#">&lt;branch name&gt;</a>'</b>
+<b>Merge branch '<a>&lt;branch name&gt;</a>'</b>
 </pre>
 <sup>Follows default git merge message</sup>
 
 ### Revert
 <pre>
-<b>Revert "<a href="#">&lt;commit headline&gt;</a>"</b>
+<b>Revert "<a>&lt;commit headline&gt;</a>"</b>
 <sub>empty separator line</sub>
-<b>This reverts commit <a href="#">&lt;commit hash&gt;</a>.</b>
-<b><a href="#">&lt;optinal reason&gt;</a></b>
+<b>This reverts commit <a>&lt;commit hash&gt;</a>.</b>
+<b><a>&lt;optinal reason&gt;</a></b>
 </pre>
 <sup>Follows default git revert message</sup>
 
