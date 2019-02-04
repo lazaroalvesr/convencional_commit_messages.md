@@ -37,6 +37,7 @@ This reverts commit <b>&lt;commit hash&gt;</b>.
 * `test` Changes that add missing tests or correcting existing tests
 * `docs` Changes that affect documentation only
 * `build` Changes that affect the build system or external dependencies
+* `ops` Changes that affect operational components like infrastructure, backup or recovery
 
 
 ### Scopes
