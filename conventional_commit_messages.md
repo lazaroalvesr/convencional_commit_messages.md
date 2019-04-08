@@ -98,18 +98,43 @@ The `footer` should contain any information about **Breaking Changes** and is al
   ```
   
   
-## Git Prereceive Hook Script to ensure commit message header format
-```bash
-#!/usr/bin/env bash
+## Git Hook Scripts to ensure commit message header format
 
-#
-# Pre-receive hook that will block commits with messges that do not follow regex rule
-#
+### commit-msg Hook (server side)
+`.git/hooks/commit-msg`
+```shell
+#!/usr/bin/env sh
 
-commit_msg_type_regex='(feat|fix|refactor|style|test|docs|build)'
+# commit-msg hook that will ensure commit messge format
+
+commit_msg_type_regex='feat|fix|refactor|style|test|docs|build'
 commit_msg_scope_regex='.{1,20}'
 commit_msg_subject_regex='.{1,100}'
-commit_msg_header_regex="^${commit_msg_type_regex}(\(${commit_msg_scope_regex}\))?: ${commit_msg_subject_regex}$|^Merge branch '.+'$|^(^Revert ".+"$)?|"
+commit_msg_regex="^(${commit_msg_type_regex})(\(${commit_msg_scope_regex}\))?: (${commit_msg_subject_regex})\$"
+merge_msg_regex="^Merge branch '.+'\$"
+revert_msg_regex="^Revert \".+\"\$"
+
+commit_msg_header=$(head -1 $1)
+if ! [[ "$commit_msg_header" =~ (${commit_msg_regex})|(${merge_msg_regex})|(${revert_msg_regex}) ]]; then
+  echo "ERROR: Invalid commit message format" >&2
+  echo "\n$commit_msg_header" >&2
+  exit 1
+fi
+```
+
+### pre-receive Hook (server side)
+`.git/hooks/pre-receive`
+```shell
+#!/usr/bin/env sh
+
+# Pre-receive hook that will block commits with messges that do not follow regex rule
+
+commit_msg_type_regex='feat|fix|refactor|style|test|docs|build'
+commit_msg_scope_regex='.{1,20}'
+commit_msg_subject_regex='.{1,100}'
+commit_msg_regex="^(${commit_msg_type_regex})(\(${commit_msg_scope_regex}\))?: (${commit_msg_subject_regex})\$"
+merge_msg_regex="^Merge branch '.+'\$"
+revert_msg_regex="^Revert \".+\"\$"
 
 zero_commit="0000000000000000000000000000000000000000"
 
@@ -132,7 +157,7 @@ while read oldrev newrev refname; do
 
   for commit in $rev_span; do
     commit_msg_header=$(git show -s --format=%s $commit)
-    if ! [[ "$commit_msg_header" =~ ${commit_msg_header_regex} ]]; then
+    if ! [[ "$commit_msg_header" =~ (${commit_msg_regex})|(${merge_msg_regex})|(${revert_msg_regex}) ]]; then
       echo "$commit" >&2
       echo "ERROR: Invalid commit message format" >&2
       echo "$commit_msg_header" >&2
