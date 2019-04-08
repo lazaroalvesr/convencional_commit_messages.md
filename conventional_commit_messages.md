@@ -124,7 +124,7 @@ fi
 ```
 
 ### pre-receive Hook (server side)
-`.git/hooks/pre-receive`
+* create following file `.git/hooks/pre-receive`
 ```shell
 #!/usr/bin/env sh
 
