@@ -44,6 +44,7 @@ This reverts commit <b>&lt;commit hash&gt;</b>.
 The `scope` provides additional contextual information.
 * Is an **optional** part of the format
 * Allowed Scopes depends on the specific project
+* Don't use issue identifiers as scopes
 
 ### Subject
 The `subject` contains a succinct description of the change.
@@ -56,6 +57,7 @@ The `subject` contains a succinct description of the change.
 The `body` should include the motivation for the change and contrast this with previous behavior.
 * Is an **optional** part of the format
 * Use the imperative, present tense: "change" not "changed" nor "changes"
+* This is the place to mention issue identifiers and their relations
 
 ### Footer
 The `footer` should contain any information about **Breaking Changes** and is also the place to **reference Issues** that this commit refers to.
