@@ -104,25 +104,25 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
 ### commit-msg Hook (local)
 * create following file `.git-hooks/commit-msg`
-```shell
-#!/usr/bin/env sh
+  ```shell
+  #!/usr/bin/env sh
 
-# commit-msg hook that will ensure commit messge format
+  # commit-msg hook that will ensure commit messge format
 
-commit_msg_type_regex='feat|fix|refactor|style|test|docs|build'
-commit_msg_scope_regex='.{1,20}'
-commit_msg_subject_regex='.{1,100}'
-commit_msg_regex="^(${commit_msg_type_regex})(\(${commit_msg_scope_regex}\))?: (${commit_msg_subject_regex})\$"
-merge_msg_regex="^Merge branch '.+'\$"
-revert_msg_regex="^Revert \".+\"\$"
+  commit_msg_type_regex='feat|fix|refactor|style|test|docs|build|ops'
+  commit_msg_scope_regex='.{1,20}'
+  commit_msg_subject_regex='.{1,100}'
+  commit_msg_regex="^(${commit_msg_type_regex})(\(${commit_msg_scope_regex}\))?: (${commit_msg_subject_regex})\$"
+  merge_msg_regex="^Merge branch '.+'\$"
+  revert_msg_regex="^Revert \".+\"\$"
 
-commit_msg_header=$(head -1 $1)
-if ! [[ "$commit_msg_header" =~ (${commit_msg_regex})|(${merge_msg_regex})|(${revert_msg_regex}) ]]; then
-  echo "ERROR: Invalid commit message format" >&2
-  echo "\n$commit_msg_header" >&2
-  exit 1
-fi
-```
+  commit_msg_header=$(head -1 $1)
+  if ! [[ "$commit_msg_header" =~ (${commit_msg_regex})|(${merge_msg_regex})|(${revert_msg_regex}) ]]; then
+    echo "ERROR: Invalid commit message format" >&2
+    echo "\n$commit_msg_header" >&2
+    exit 1
+  fi
+  ```
 * ⚠ make `.git-hooks/commit-msg` executable (unix: `chmod +x .git-hooks/commit-msg`)
 * set commit hook directory to `.git-hooks`  `git config core.hooksPath '.git-hooks'`
 
