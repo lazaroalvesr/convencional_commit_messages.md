@@ -124,7 +124,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
   fi
   ```
 * ⚠ make `.git-hooks/commit-msg` executable (unix: `chmod +x '.git-hooks/commit-msg'`)
-* set commit hook directory to `.git-hooks`  `git config core.hooksPath '.git-hooks'`
+* set git hook directory to `.git-hooks`  `git config core.hooksPath '.git-hooks'`
 
 ### pre-receive Hook (server side)
 * create following file in your repository folder `.git/hooks/pre-receive`
