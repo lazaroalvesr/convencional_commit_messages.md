@@ -103,7 +103,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 ## Git Hook Scripts to ensure commit message header format
 
 ### commit-msg Hook (local)
-* create following file `.git-hooks/commit-msg`
+* create following file in your local repository folder`.git-hooks/commit-msg`
   ```shell
   #!/usr/bin/env sh
 
@@ -127,7 +127,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 * set commit hook directory to `.git-hooks`  `git config core.hooksPath '.git-hooks'`
 
 ### pre-receive Hook (server side)
-* create following file `.git/hooks/pre-receive`
+* create following file in your repository folder `.git/hooks/pre-receive`
   ```shell
   #!/usr/bin/env sh
 
