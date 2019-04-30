@@ -103,7 +103,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 ## Git Hook Scripts to ensure commit message header format
 
 ### commit-msg Hook (local)
-* create following file `.git-hooks/commit-msg` and make it executable
+* create following file `.git-hooks/commit-msg` and make it executable (unix: `chmod +x .git-hooks/commit-msg`)
 ```shell
 #!/usr/bin/env sh
 
