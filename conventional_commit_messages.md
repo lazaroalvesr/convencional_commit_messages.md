@@ -30,15 +30,15 @@ This reverts commit <b>&lt;commit hash&gt;</b>.
 <sup>Follows default git revert message</sup>
 
 ### Types
-* `feat` A code change that adds a new feature
-* `fix` A code change that adds a bug fix
-* `refactor` A code change that neither adds a new feature nor fixes a bug
-* `style` A code change that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
-* `test` Changes that add missing tests or correcting existing tests
-* `docs` Changes that affect documentation only
-* `build` Changes that affect the build system or external dependencies
-* `ops` Changes that affect operational components like infrastructure, backup or recovery
-
+* `feat` Commits, that adds a new feature, **recognizable by your clients**
+* `fix` Commits, that fixes a bug, **recognizable by your clients**
+* `perf` Commits, that improves performance, **recognizable by your clients**
+* `refactor` Commits, that rewrite/restructure your code, however does not change any behaviour
+* `style` Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
+* `test` Commits, that add missing tests or correcting existing tests
+* `docs` Commits, that affect documentation only
+* `build` Commits, that affect the build system or external dependencies
+* `ops` Commits, that affect operational components like infrastructure, backup or recovery
 
 ### Scopes
 The `scope` provides additional contextual information.
