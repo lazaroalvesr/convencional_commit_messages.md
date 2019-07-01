@@ -64,7 +64,7 @@ The `body` should include the motivation for the change and contrast this with p
 The `footer` should contain any information about **Breaking Changes** and is also the place to **reference Issues** that this commit refers to.
 * Is an **optional** part of the format
 * **optionally** reference an issue by its id.
-* **Breaking Changes** should start with the word `BREAKING CHANGE:` folowed by space or two newlines. The rest of the commit message is then used for this.
+* **Breaking Changes** should start with the word `BREAKING CHANGES:` folowed by space or two newlines. The rest of the commit message is then used for this.
 
 
 ### Examples
@@ -75,7 +75,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
   feat: remove ticket list endpoint
   
   refers to JIRA-1337
-  BREAKING CHANGE: ticket enpoints no longer supports list all entites.
+  BREAKING CHANGES: ticket enpoints no longer supports list all entites.
   ```
 * ```
   fix: add missing parameter to service call
