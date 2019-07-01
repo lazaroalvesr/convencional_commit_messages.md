@@ -36,7 +36,7 @@ This reverts commit <b>&lt;commit hash&gt;</b>.
 * `refactor` Commits, that rewrite/restructure your code, however does not change any behaviour
 * `style` Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 * `test` Commits, that add missing tests or correcting existing tests
-* `docs` Commits, that affect documentation only
+* `doc` Commits, that affect documentation only
 * `build` Commits, that affect the build system or external dependencies
 * `ops` Commits, that affect operational components like infrastructure, backup or recovery
 
