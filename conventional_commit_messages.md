@@ -110,8 +110,15 @@ The `footer` should contain any information about **Breaking Changes** and is al
   ```shell
   #!/usr/bin/env sh
   
-  # ensure https://github.com/qoomon/git-conventional-commits is installed
-  git-conventional-commits commit-msg-hook "$1"
+  commit_message="$1"
+  # exit with a non zero exit code incase of an invalid commit message
+  
+  # use git-conventional-commits, see https://github.com/qoomon/git-conventional-commits
+  git-conventional-commits commit-msg-hook "$commit_message"
+  
+  # or verify $commit_message with your own tooling
+  # ...
+  
   ```
 * ⚠ make `.git-hooks/commit-msg` executable (unix: `chmod +x '.git-hooks/commit-msg'`)
 * set git hook directory to `.githooks`  `git config core.hooksPath '.git-hooks'`
