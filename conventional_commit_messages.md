@@ -36,7 +36,7 @@ This reverts commit <b>&lt;commit hash&gt;</b>.
     * `feat` Commits, that adds a new feature
     * `fix` Commits, that fixes a bug
 * `refactor` Commits, that rewrite/restructure your code, however does not change any behaviour
-    * `perf` Commits are `refactor` commit, that improves performance
+    * `perf` Commits are special `refactor` commits, that improves performance
 * `style` Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 * `test` Commits, that add missing tests or correcting existing tests
 * `doc` Commits, that affect documentation only
