@@ -42,6 +42,7 @@ This reverts commit <b>&lt;commit hash&gt;</b>.
 * `docs` Commits, that affect documentation only
 * `build` Commits, that affect build components like build tool, ci pipeline, dependencies, project version, ...
 * `ops` Commits, that affect operational components like infrastructure, deployment, backup, recovery, ...
+* `chore` Miscellaneous commits e.g. modifying `.gitignore`
 
 ### Scopes
 The `scope` provides additional contextual information.
