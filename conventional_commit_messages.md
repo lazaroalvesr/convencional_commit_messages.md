@@ -39,7 +39,7 @@ This reverts commit <b>&lt;commit hash&gt;</b>.
     * `perf` Commits are special `refactor` commits, that improves performance
 * `style` Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 * `test` Commits, that add missing tests or correcting existing tests
-* `doc` Commits, that affect documentation only
+* `docs` Commits, that affect documentation only
 * `build` Commits, that affect build components like build tool, ci pipeline, dependencies, project version, ...
 * `ops` Commits, that affect operational components like infrastructure, deployment, backup, recovery, ...
 
