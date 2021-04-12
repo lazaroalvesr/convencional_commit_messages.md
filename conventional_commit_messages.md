@@ -86,7 +86,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
   The error occurred because of <reasons>.
   ```
 * ```
-  build: release version 1.0.0
+  build(release): bump version to 1.0.0
   ```
 * ```
   build: update dependencies
