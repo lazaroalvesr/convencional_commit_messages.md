@@ -97,11 +97,6 @@ The `footer` should contain any information about **Breaking Changes** and is al
 * ```
   style: remove empty line
   ```
-* ```
-  revert: refactor: implement calculation method as recursion
-  
-  This reverts commit 221d3ec6ffeead67cee8c730c4a15cf8dc84897a.
-  ```
   
   
 ## Git Hook Scripts to ensure commit message header format
