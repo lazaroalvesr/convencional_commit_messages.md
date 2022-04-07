@@ -1,4 +1,4 @@
-# Conventinal Commit Messages 
+# Conventional Commit Messages 
 See how a minor change to your commit message style can make a difference. [Examples](#examples)
 
 **Have a look at CLI util [git-conventional-commits](https://github.com/qoomon/git-conventional-commits) to ensure this conventions and generate changelogs**
@@ -22,21 +22,13 @@ Merge branch '<b>&lt;branch name&gt;</b>'
 </pre>
 <sup>Follows default git merge message</sup>
 
-### Revert
-<pre>
-Revert "<b>&lt;commit headline&gt;</b>"
-<sub>empty separator line</sub>
-This reverts commit <b>&lt;commit hash&gt;</b>.
-<b>&lt;optinal reason&gt;</b>
-</pre>
-<sup>Follows default git revert message</sup>
 
 ### Types
 * API relevant changes
     * `feat` Commits, that adds a new feature
     * `fix` Commits, that fixes a bug
 * `refactor` Commits, that rewrite/restructure your code, however does not change any behaviour
-    * `perf` Commits are special `refactor` commits, that improves performance
+    * `perf` Commits are special `refactor` commits, that improve performance
 * `style` Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 * `test` Commits, that add missing tests or correcting existing tests
 * `docs` Commits, that affect documentation only
@@ -132,7 +124,6 @@ The `footer` should contain any information about **Breaking Changes** and is al
   commit_msg_subject_regex='.{1,100}'
   commit_msg_regex="^(${commit_msg_type_regex})(\(${commit_msg_scope_regex}\))?: (${commit_msg_subject_regex})\$"
   merge_msg_regex="^Merge branch '.+'\$"
-  revert_msg_regex="^Revert \".+\"\$"
 
   zero_commit="0000000000000000000000000000000000000000"
 
@@ -155,7 +146,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
     for commit in $rev_span; do
       commit_msg_header=$(git show -s --format=%s $commit)
-      if ! [[ "$commit_msg_header" =~ (${commit_msg_regex})|(${merge_msg_regex})|(${revert_msg_regex}) ]]; then
+      if ! [[ "$commit_msg_header" =~ (${commit_msg_regex})|(${merge_msg_regex}) ]]; then
         echo "$commit" >&2
         echo "ERROR: Invalid commit message format" >&2
         echo "$commit_msg_header" >&2
