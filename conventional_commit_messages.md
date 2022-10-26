@@ -46,6 +46,7 @@ The `scope` provides additional contextual information.
 The `subject` contains a succinct description of the change.
 * Is a **mandatory** part of the format
 * Use the imperative, present tense: "change" not "changed" nor "changes"
+  * Think of `This commit will <subject>`
 * Don't capitalize the first letter
 * No dot (.) at the end
 
