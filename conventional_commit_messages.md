@@ -42,6 +42,10 @@ The `scope` provides additional contextual information.
 * Allowed Scopes depends on the specific project
 * Don't use issue identifiers as scopes
 
+### Breaking Changes Indicator
+Breaking changes should be indicated by an `!` before the `:` in the subject line e.g. `feat(api)!: remove status endpoint`
+* Is an **optional** part of the format
+
 ### Subject
 The `subject` contains a succinct description of the change.
 * Is a **mandatory** part of the format
