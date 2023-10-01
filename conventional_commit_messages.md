@@ -24,7 +24,7 @@ Merge branch '<b>&lt;BRANCH_NAME&gt;</b>'
 
 ### Revert Commit
 <pre>
-Revert '<b>&lt;SUBJECT&gt;</b>'
+Revert "<b>&lt;SUBJECT&gt;</b>"
 </pre>
 <sup>Follows default git revert message</sup>
 
