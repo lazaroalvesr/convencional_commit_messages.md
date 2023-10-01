@@ -16,11 +16,17 @@ See how a minor change to your commit message style can make a difference. [Exam
 <b><a href="#footer">&lt;optional footer&gt;</a></b>
 </pre>
 
-### Merge
+### Merge Commit
 <pre>
-Merge branch '<b>&lt;branch name&gt;</b>'
+Merge branch '<b>&lt;BRANCH_NAME&gt;</b>'
 </pre>
 <sup>Follows default git merge message</sup>
+
+### Revert Commit
+<pre>
+Revert '<b>&lt;SUBJECT&gt;</b>'
+</pre>
+<sup>Follows default git revert message</sup>
 
 
 ### Types
