@@ -9,7 +9,7 @@ See how a minor change to your commit message style can make a difference. [Exam
 
 ### Default
 <pre>
-<b><a href="#types">&lt;type&gt;</a></b></font>(<b><a href="#scopes">&lt;optional scope&gt;</a></b>): <b><a href="#subject">&lt;subject&gt;</a></b>
+<b><a href="#types">&lt;type&gt;</a></b></font>(<b><a href="#scopes">&lt;optional scope&gt;</a></b>): <b><a href="#description">&lt;description&gt;</a></b>
 <sub>empty separator line</sub>
 <b><a href="#body">&lt;optional body&gt;</a></b>
 <sub>empty separator line</sub>
@@ -24,7 +24,7 @@ Merge branch '<b>&lt;branch name&gt;</b>'
 
 ### Revert Commit
 <pre>
-Revert "<b>&lt;first line of reverted commit message&gt;</b>"
+Revert "<b>&lt;reverted commit subject line&gt;</b>"
 </pre>
 <sup>Follows default git revert message</sup>
 
@@ -52,8 +52,8 @@ The `scope` provides additional contextual information.
 Breaking changes should be indicated by an `!` before the `:` in the subject line e.g. `feat(api)!: remove status endpoint`
 * Is an **optional** part of the format
 
-### Subject
-The `subject` contains a succinct description of the change.
+### Description
+The `description` contains a concise description of the change.
 * Is a **mandatory** part of the format
 * Use the imperative, present tense: "change" not "changed" nor "changes"
   * Think of `This commit will <subject>`
@@ -132,8 +132,8 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
   commit_msg_type_regex='feat|fix|refactor|style|test|docs|build'
   commit_msg_scope_regex='.{1,20}'
-  commit_msg_subject_regex='.{1,100}'
-  commit_msg_regex="^(${commit_msg_type_regex})(\(${commit_msg_scope_regex}\))?: (${commit_msg_subject_regex})\$"
+  commit_msg_description_regex='.{1,100}'
+  commit_msg_regex="^(${commit_msg_type_regex})(\(${commit_msg_scope_regex}\))?: (${commit_msg_description_regex})\$"
   merge_msg_regex="^Merge branch '.+'\$"
 
   zero_commit="0000000000000000000000000000000000000000"
