@@ -74,27 +74,45 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
 
 ### Examples
-* `feat`: <sub>(this commit will)</sub> add email notifications on new direct messages
-* `fix(api)`: <sub>(this commit will)</sub> handle empty message in request body
-* `fix(api)`: <sub>(this commit will)</sub> fix wrong calculation of request body checksum
-* `perf`: <sub>(this commit will)</sub> decrease memory footprint for determine uniqe visitors by using HyperLogLog
-* `build`: <sub>(this commit will)</sub> update dependencies
-* `build(release)`: <sub>(this commit will)</sub> bump version to 1.0.0
-* `feat(shopping cart)`: <sub>(this commit will)</sub> add the amazing button
-* `refactor:` implement fibonacci number calculation as recursion
-* `style`: remove empty line
+* ```
+  feat: add email notifications on new direct messages
+  ```
+* ```
+  feat(shopping cart): add the amazing button
+  ```
 * ```
   feat: remove ticket list endpoint
-  
+
   refers to JIRA-1337
+
   BREAKING CHANGES: ticket enpoints no longer supports list all entites.
   ```
 * ```
+  fix(api): handle empty message in request body
+  ```
+* ```
+  fix(api): fix wrong calculation of request body checksum
+  ```
+* ```
   fix: add missing parameter to service call
-  
+
   The error occurred because of <reasons>.
   ```
-
+* ```
+  perf: decrease memory footprint for determine uniqe visitors by using HyperLogLog
+  ```
+* ```
+  build: update dependencies
+  ```
+* ```
+  build(release): `bump version to 1.0.0
+  ```
+* ```
+  refactor: implement fibonacci number calculation as recursion
+  ```
+* ```
+  style: remove empty line
+  ```
 
   
 ## Git Hook Scripts to ensure commit message header format
