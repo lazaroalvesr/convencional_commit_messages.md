@@ -56,7 +56,7 @@ Breaking changes should be indicated by an `!` before the `:` in the subject lin
 The `description` contains a concise description of the change.
 * Is a **mandatory** part of the format
 * Use the imperative, present tense: "change" not "changed" nor "changes"
-  * Think of `This commit will <subject>`
+  * Think of `This commit will...` or `This commit should...`
 * Don't capitalize the first letter
 * No dot (.) at the end
 
