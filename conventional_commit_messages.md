@@ -74,9 +74,15 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
 
 ### Examples
-* ```
-  feat(shopping cart): add the amazing button
-  ```
+* `feat`: <sub>(this commit will)</sub> add email notifications on new direct messages
+* `fix(api)`: <sub>(this commit will)</sub> handle empty message in request body
+* `fix(api)`: <sub>(this commit will)</sub> fix wrong calculation of request body checksum
+* `perf`: <sub>(this commit will)</sub> decrease memory footprint for determine uniqe visitors by using HyperLogLog
+* `build`: <sub>(this commit will)</sub> update dependencies
+* `build(release)`: <sub>(this commit will)</sub> bump version to 1.0.0
+* `feat(shopping cart)`: <sub>(this commit will)</sub> add the amazing button
+* `refactor:` implement fibonacci number calculation as recursion
+* `style`: remove empty line
 * ```
   feat: remove ticket list endpoint
   
@@ -88,19 +94,8 @@ The `footer` should contain any information about **Breaking Changes** and is al
   
   The error occurred because of <reasons>.
   ```
-* ```
-  build(release): bump version to 1.0.0
-  ```
-* ```
-  build: update dependencies
-  ```
-* ```
-  refactor: implement calculation method as recursion
-  ```
-* ```
-  style: remove empty line
-  ```
-  
+
+
   
 ## Git Hook Scripts to ensure commit message header format
 
