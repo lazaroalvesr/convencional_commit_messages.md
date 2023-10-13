@@ -81,7 +81,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
   feat(shopping cart): add the amazing button
   ```
 * ```
-  feat: remove ticket list endpoint
+  feat!: remove ticket list endpoint
 
   refers to JIRA-1337
 
