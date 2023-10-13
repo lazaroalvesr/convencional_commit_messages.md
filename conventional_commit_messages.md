@@ -33,7 +33,7 @@ Revert "<b>&lt;reverted commit subject line&gt;</b>"
 * API relevant changes
     * `feat` Commits, that adds a new feature
     * `fix` Commits, that fixes a bug
-* `refactor` Commits, that rewrite/restructure your code, however does not change any behaviour
+* `refactor` Commits, that rewrite/restructure your code, however does not change any API behaviour
     * `perf` Commits are special `refactor` commits, that improve performance
 * `style` Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 * `test` Commits, that add missing tests or correcting existing tests
