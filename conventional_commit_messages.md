@@ -31,7 +31,7 @@ Revert "<b>&lt;reverted commit subject line&gt;</b>"
 
 ### Types
 * API relevant changes
-    * `feat` Commits, that adds a new feature
+    * `feat` Commits, that adds or remove a new feature
     * `fix` Commits, that fixes a bug
 * `refactor` Commits, that rewrite/restructure your code, however does not change any API behaviour
     * `perf` Commits are special `refactor` commits, that improve performance
