@@ -118,6 +118,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 ## Git Hook Scripts to ensure commit message header format
 
 ### commit-msg Hook (local)
+* ensure `node` and `npx` command is installed on your local machine
 * create following file in your local repository folder`.git-hooks/commit-msg`
   ```shell
   #!/usr/bin/env sh
@@ -126,7 +127,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
   # exit with a non zero exit code incase of an invalid commit message
   
   # use git-conventional-commits, see https://github.com/qoomon/git-conventional-commits
-  git-conventional-commits commit-msg-hook "$commit_message"
+  npx git-conventional-commits commit-msg-hook "$commit_message"
   
   # or verify $commit_message with your own tooling
   # ...
