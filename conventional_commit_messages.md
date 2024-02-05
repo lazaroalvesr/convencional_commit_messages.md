@@ -1,5 +1,5 @@
 # Conventional Commit Messages 
-See how a minor change to your commit message style can make a difference. [Examples](#examples)
+See how a [minor change](#examples) to your commit message style can make a difference. 
 
 **ℹ️ [git-conventional-commits](https://github.com/qoomon/git-conventional-commits)**  A CLI util to ensure this conventions and generate changelogs 
 
