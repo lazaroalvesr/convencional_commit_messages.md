@@ -62,7 +62,7 @@ The `description` contains a concise description of the change.
 * Use the imperative, present tense: "change" not "changed" nor "changes"
   * Think of `This commit will...` or `This commit should...`
 * Don't capitalize the first letter
-* No dot (.) at the end
+* No dot (`.`) at the end
 
 ### Body
 The `body` should include the motivation for the change and contrast this with previous behavior.
