@@ -143,7 +143,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 ### pre-receive Hook (server side)
 * create following file in your repository folder `.git/hooks/pre-receive`
   ```shell
-  #!/usr/bin/env sh
+  #!/usr/bin/env bash
 
   # Pre-receive hook that will block commits with messges that do not follow regex rule
 
