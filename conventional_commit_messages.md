@@ -5,7 +5,7 @@ See how a [minor change](#examples) to your commit message style can make a diff
 
 <img src="https://img.icons8.com/dusk/1600/commit-git.png" width="200" height="200" />
 
-## Commit Messaz Formats
+## Commit Message Formats
 
 ### Inital Commit 
 Just `init`
