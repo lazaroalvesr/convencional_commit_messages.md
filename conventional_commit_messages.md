@@ -8,7 +8,9 @@ See how a [minor change](#examples) to your commit message style can make a diff
 ## Commit Message Formats
 
 ### Inital Commit 
-Just `init`
+```
+init
+```
 
 ### Default
 <pre>
