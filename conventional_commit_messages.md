@@ -7,11 +7,6 @@ See how a [minor change](#examples) to your commit message style can make a diff
 
 ## Commit Message Formats
 
-### Inital Commit 
-```
-init
-```
-
 ### Default
 <pre>
 <b><a href="#types">&lt;type&gt;</a></b></font>(<b><a href="#scopes">&lt;optional scope&gt;</a></b>): <b><a href="#description">&lt;description&gt;</a></b>
@@ -33,6 +28,10 @@ Revert "<b>&lt;reverted commit subject line&gt;</b>"
 </pre>
 <sup>Follows default git revert message</sup>
 
+### Inital Commit 
+```
+init
+```
 
 ### Types
 * API relevant changes
