@@ -1,38 +1,3 @@
-# Conventional Commit Messages 
-See how a [minor change](#examples) to your commit message style can make a difference. 
-
-**ℹ️ [git-conventional-commits](https://github.com/qoomon/git-conventional-commits)**  A CLI util to ensure this conventions and generate changelogs 
-
-<img src="https://img.icons8.com/dusk/1600/commit-git.png" width="200" height="200" />
-
-## Commit Message Formats
-
-### Default
-<pre>
-<b><a href="#types">&lt;type&gt;</a></b></font>(<b><a href="#scopes">&lt;optional scope&gt;</a></b>): <b><a href="#description">&lt;description&gt;</a></b>
-<sub>empty separator line</sub>
-<b><a href="#body">&lt;optional body&gt;</a></b>
-<sub>empty separator line</sub>
-<b><a href="#footer">&lt;optional footer&gt;</a></b>
-</pre>
-
-### Merge Commit
-<pre>
-Merge branch '<b>&lt;branch name&gt;</b>'
-</pre>
-<sup>Follows default git merge message</sup>
-
-### Revert Commit
-<pre>
-Revert "<b>&lt;reverted commit subject line&gt;</b>"
-</pre>
-<sup>Follows default git revert message</sup>
-
-### Inital Commit 
-```
-init
-```
-
 ### Types
 * API relevant changes
     * `feat` Commits, that adds or remove a new feature
