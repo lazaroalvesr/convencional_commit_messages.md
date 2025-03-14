@@ -163,3 +163,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
 * https://github.com/github/platform-samples/tree/master/pre-receive-hooks  
 * https://github.community/t5/GitHub-Enterprise-Best-Practices/Using-pre-receive-hooks-in-GitHub-Enterprise/ba-p/13863
+
+# Agradecimentos
+
+Este projeto foi baseado em um repositório que eu clonei de [Horácio Muller](https://gist.github.com/horaciomuller/32bbb7d8fee9203afe148d73510e2035). Agradeço pela inspiração e pelos recursos fornecidos!
